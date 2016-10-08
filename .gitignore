@@ -251,3 +251,4 @@ paket-files/
 .idea/
 *.sln.iml
 /SalesWebApp/Sales.ServiceApi/Properties/PublishProfiles
+/SalesWebApp/Sales.WebPortal/Properties/PublishProfiles
