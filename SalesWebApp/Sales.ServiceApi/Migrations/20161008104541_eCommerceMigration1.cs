@@ -9,7 +9,7 @@ namespace Sales.ServiceApi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "ProductsListViewModels",
+                name: "Products",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
@@ -23,14 +23,14 @@ namespace Sales.ServiceApi.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProductsListViewModels", x => x.Id);
+                    table.PrimaryKey("PK_Products", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "ProductsListViewModels");
+                name: "Products");
         }
     }
 }

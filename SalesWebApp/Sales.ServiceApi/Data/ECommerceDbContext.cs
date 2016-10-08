@@ -9,6 +9,6 @@ namespace Sales.ServiceApi.Data
             : base(options)
         { }
 
-        public DbSet<Product> ProductsListViewModels { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }

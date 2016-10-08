@@ -37,7 +37,7 @@ namespace Sales.ServiceApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProductsListViewModels");
+                    b.ToTable("Products");
                 });
         }
     }

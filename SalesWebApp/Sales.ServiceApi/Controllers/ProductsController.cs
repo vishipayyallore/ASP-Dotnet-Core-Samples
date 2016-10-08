@@ -28,7 +28,7 @@ namespace Sales.ServiceApi.Controllers
         {
             var productsList = new ProductsViewModel
             {
-                Products = _dbContext.ProductsListViewModels.ToList()
+                Products = _dbContext.Products.ToList()
             };
             return Json(productsList);
         }

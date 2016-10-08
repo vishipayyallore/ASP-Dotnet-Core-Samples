@@ -8,7 +8,7 @@ using Sales.ServiceApi.Data;
 namespace Sales.ServiceApi.Migrations
 {
     [DbContext(typeof(ECommerceDbContext))]
-    [Migration("20161008100429_eCommerceMigration1")]
+    [Migration("20161008104541_eCommerceMigration1")]
     partial class eCommerceMigration1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,7 +38,7 @@ namespace Sales.ServiceApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProductsListViewModels");
+                    b.ToTable("Products");
                 });
         }
     }
