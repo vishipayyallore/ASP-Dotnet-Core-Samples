@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Sales.ServiceApi.Data;
 using Sales.ServiceApi.Data.ViewModels;
@@ -24,6 +25,7 @@ namespace Sales.ServiceApi.Controllers
 
         // GET: api/Products
         [HttpGet]
+        [EnableCors("*")]
         public JsonResult Get()
         {
             var productsList = new ProductsViewModel

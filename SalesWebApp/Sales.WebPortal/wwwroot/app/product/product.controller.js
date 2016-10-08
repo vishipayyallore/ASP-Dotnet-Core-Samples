@@ -21,7 +21,9 @@
             .then(function (response) {
                 // Success
                 angular.copy(response.data, vm.products);
+                alert(vm.products.products);
             }, function (error) {
+                alert('Error' + error.description);
                 // Failure
                 vm.errorMessage = "Failed to load data: " + error;
             })
