@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@{
+//var applicationName = applicationDetails.Value.Name;
+//var applicationVersion = applicationDetails.Value.VersionNumber;
+//var developedBy = applicationDetails.Value.DevelopedBy;
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -11,7 +17,7 @@
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment names="Staging,Production">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
@@ -36,22 +42,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Sales.WebPortal</a>
+                @Html.ActionLink("NitroCart", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li>@Html.ActionLink("Clients", "Index", "Client")</li>
+                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
                 </ul>
+
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container body-content" id="wrapper">
         @RenderBody()
+   
         <hr />
         <footer>
-            <p>&copy; 2016 - Sales.WebPortal</p>
+            <p>&copy; 2016 - Sales.WebPortal (Version 1.0.0.1)</p>
         </footer>
     </div>
 
@@ -74,6 +81,20 @@
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
+    <script src="~/lib/angular/angular.js"></script>
+    <script src="~/lib/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!--Application Specific JS files-->
+    <script src="~/app/sharedjs/WaitControl.js"></script>
+    <script src="~/app/app.module.js"></script>
+    <script src="~/app/app.config.js"></script>
+    <script src="~/app/home/home.module.js"></script>
+    <script src="~/app/home/home.controller.js"></script>
+    <script src="~/app/client/client.module.js"></script>
+    <script src="~/app/client/client.controller.js"></script>
+    <script src="~/app/client/client.config.js"></script>
+
     @RenderSection("scripts", required: false)
+
 </body>
 </html>
