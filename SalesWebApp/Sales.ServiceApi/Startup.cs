@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
-using Sales.Data.Store;
+using Sales.ServiceApi.Data;
 
 namespace Sales.ServiceApi
 {

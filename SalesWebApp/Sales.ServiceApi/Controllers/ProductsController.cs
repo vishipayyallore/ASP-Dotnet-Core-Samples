@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Sales.ServiceApi.Data;
+using Sales.ServiceApi.Data.ViewModels;
 
 // For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,11 +11,22 @@ namespace Sales.ServiceApi.Controllers
     [Route("api/[controller]")]
     public class ProductsController : Controller
     {
-        // GET: api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
+
+        #region Variables.
+        private readonly ECommerceDbContext _dbContext;
+        #endregion
+
+        #region Methods.
+        public ProductsController(ECommerceDbContext dbContext)
         {
-            return new string[] { "value1", "value2" };
+            this._dbContext = dbContext;
+        }
+
+        // GET: api/Products
+        [HttpGet]
+        public IEnumerable<ProductsViewModel> Get()
+        {
+            return _dbContext.ProductsListViewModels.ToList();
         }
 
         // GET api/values/5
@@ -39,5 +53,6 @@ namespace Sales.ServiceApi.Controllers
         public void Delete(int id)
         {
         }
+        #endregion
     }
 }
