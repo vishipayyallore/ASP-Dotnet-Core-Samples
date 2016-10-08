@@ -22,7 +22,7 @@ namespace Sales.Data.Core.Models
 
         public int PurchaseByCount { get; set; }
 
-        public List<Tag> Tags { get; set; }
+        public string Tags { get; set; }
         #endregion
     }
 }

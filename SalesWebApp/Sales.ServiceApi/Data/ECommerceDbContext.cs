@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Sales.ServiceApi.Data.ViewModels;
+using Sales.Data.Core.Models;
 
 namespace Sales.ServiceApi.Data
 {
@@ -9,6 +9,6 @@ namespace Sales.ServiceApi.Data
             : base(options)
         { }
 
-        public DbSet<ProductsViewModel> ProductsListViewModels { get; set; }
+        public DbSet<Product> ProductsListViewModels { get; set; }
     }
 }

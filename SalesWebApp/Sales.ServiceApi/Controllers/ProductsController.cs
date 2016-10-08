@@ -24,9 +24,13 @@ namespace Sales.ServiceApi.Controllers
 
         // GET: api/Products
         [HttpGet]
-        public IEnumerable<ProductsViewModel> Get()
+        public JsonResult Get()
         {
-            return _dbContext.ProductsListViewModels.ToList();
+            var productsList = new ProductsViewModel
+            {
+                Products = _dbContext.ProductsListViewModels.ToList()
+            };
+            return Json(productsList);
         }
 
         // GET api/values/5
