@@ -3,7 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sales.ServiceApi", "Sales.ServiceApi\Sales.ServiceApi.xproj", "{889921DB-C721-47EF-9883-382F5226DFA5}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Sales.WebPortal", "Sales.WebPortal\Sales.WebPortal.xproj", "{410F26E5-2C07-4C50-91C8-DF41834393DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InternalDocumentation", "InternalDocumentation", "{9DD8707D-53EF-459C-BB79-DD51A9DB8380}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{889921DB-C721-47EF-9883-382F5226DFA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{889921DB-C721-47EF-9883-382F5226DFA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{889921DB-C721-47EF-9883-382F5226DFA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{889921DB-C721-47EF-9883-382F5226DFA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{410F26E5-2C07-4C50-91C8-DF41834393DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410F26E5-2C07-4C50-91C8-DF41834393DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410F26E5-2C07-4C50-91C8-DF41834393DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410F26E5-2C07-4C50-91C8-DF41834393DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
