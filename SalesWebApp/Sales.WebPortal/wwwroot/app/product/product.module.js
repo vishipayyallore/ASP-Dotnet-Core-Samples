@@ -4,6 +4,6 @@
     "use strict";
 
     //Creating the Module
-    angular.module("app.client", ["ui.router"]);
+    angular.module("app.product", ["ui.router"]);
 
 })();

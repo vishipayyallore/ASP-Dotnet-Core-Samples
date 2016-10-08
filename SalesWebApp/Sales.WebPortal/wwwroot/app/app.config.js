@@ -18,10 +18,10 @@
                 }
             )
             .state(
-                "client", {
-                    url: "/Client",
-                    templateUrl: "app/client/index.html",
-                    controller: "ClientController",
+                "product", {
+                    url: "/Product",
+                    templateUrl: "app/product/index.html",
+                    controller: "ProductController",
                     controllerAs: "vm"
                 }
             );

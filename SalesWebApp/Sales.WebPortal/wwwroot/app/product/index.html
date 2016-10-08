@@ -4,7 +4,7 @@
     <div style="margin-top: 5Px" class="panel-heading">
         <table>
             <tr>
-                <td><a href="/AddClient" class="btn btn-xs btn-info"><i class="fa fa-plus-square" aria-hidden="true"></i> New Client</a>&nbsp; |&nbsp; </td>
+                <td><a href="#" class="btn btn-xs btn-info"><i class="fa fa-plus-square" aria-hidden="true"></i> New Prodcut</a>&nbsp; |&nbsp; </td>
                 <td>Search: &nbsp; </td>
                 <td> <input class="form-control input-sm" id="searchOn" ng-model="vm.searchOn" placeholder="Search for ...."></td>
             </tr>
@@ -25,7 +25,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="client in vm.clients | filter: vm.searchOn">
+            <tr ng-repeat="product in vm.products | filter: vm.searchOn">
                 <td>{{client.fileNumber}}</td>
                 <td>{{client.fullName}}</td>
                 <td>{{client.lastFilingYear}}</td>

@@ -2,6 +2,6 @@
 
 (function () {
 
-    angular.module("app", ["waitControl", "app.home", "app.client", "ui.router"]);
+    angular.module("app", ["waitControl", "app.home", "app.product", "ui.router"]);
 
 })();
