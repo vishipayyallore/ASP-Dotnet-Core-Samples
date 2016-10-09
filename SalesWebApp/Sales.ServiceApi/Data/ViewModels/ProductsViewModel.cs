@@ -6,6 +6,9 @@ namespace Sales.ServiceApi.Data.ViewModels
 {
     public class ProductsViewModel
     {
+
+        public ProductsViewModel() { }
+
         #region Properties
         public Guid Id { get; set; }
 

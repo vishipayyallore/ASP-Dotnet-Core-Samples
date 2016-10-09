@@ -16,14 +16,14 @@
         vm.products = [];
 
         var url = "http://salesserviceapi.azurewebsites.net/api/Products";
-
+        //alert(url);
         $http.get(url)
             .then(function (response) {
                 // Success
-                angular.copy(response.data, vm.products);
-                alert(vm.products.products);
+                //angular.copy(response.data, vm.products);
+                //alert(vm.products.products);
             }, function (error) {
-                alert('Error' + error.description);
+                alert('Error : ' + error.statusText);
                 // Failure
                 vm.errorMessage = "Failed to load data: " + error;
             })

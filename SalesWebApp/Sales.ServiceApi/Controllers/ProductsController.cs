@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -25,40 +26,26 @@ namespace Sales.ServiceApi.Controllers
 
         // GET: api/Products
         [HttpGet]
-        [EnableCors("*")]
         public JsonResult Get()
         {
-            var productsList = new ProductsViewModel
+            var errorOutput = string.Empty;
+
+            try
             {
-                Products = _dbContext.Products.ToList()
-            };
-            return Json(productsList);
+                var productsList = new ProductsViewModel
+                {
+                    Products = _dbContext.Products.ToList()
+                };
+                return Json(productsList);
+            }
+            catch (Exception errorObject)
+            {
+                errorOutput = string.Format("{ \"Error Message:\": {0} }", errorObject.StackTrace);
+            }
+            return Json(errorOutput);
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        
         #endregion
     }
 }
