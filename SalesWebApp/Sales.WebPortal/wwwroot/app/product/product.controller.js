@@ -20,8 +20,8 @@
         $http.get(url)
             .then(function (response) {
                 // Success
-                //angular.copy(response.data, vm.products);
-                //alert(vm.products.products);
+                angular.copy(response.data.products, vm.products);
+                //alert(vm.products[0].imageUrl);
             }, function (error) {
                 alert('Error : ' + error.statusText);
                 // Failure
