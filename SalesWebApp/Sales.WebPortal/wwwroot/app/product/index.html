@@ -12,14 +12,60 @@
     </div>
 
     <div>
-        <div class="section" >
-            <div ng-repeat="product in vm.products">
+        <div class="section">
+            <div ng-repeat="product in vm.products" class="sectionproduct">
                 <div>
-                    <span>{{product.price}}</span>
-                    <span>{{product.tags}}</span>
+                    <table style="text-align: left">
+                        <tr>
+                            <td>{{product.name}}</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img ng-src="{{product.imageUrl}}" alt="Product Image" width="300px" height="300px">
+                                <span>
+                                    <table style="text-align: left" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td>{{product.price}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Purchase by: {{product.purchaseByCount}}</td>
+                                        </tr>
+                                    </table>
+                                </span>
+                            </td>
+                        </tr>
+                        <!--<tr>
+                            <td>{{product.price}}</td>
+                        </tr>-->
+                        <!--<tr>
+                            <td>Purchase by: {{product.purchaseByCount}}</td>
+                        </tr>-->
+                        <tr>
+                            <td>Tags: {{product.tags}}</td>
+                        </tr>
+                        <tr>
+                            <td>Link: <a href="#">{{product.link}}</a></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
+
+            <div>
+                <nav>
+                    <ul class="pagination pagination-sm">
+                        <li class="disabled"><a href="#">«</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+
+        
     </div>
 
     <!-- Table -->

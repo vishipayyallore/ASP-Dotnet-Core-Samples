@@ -133,8 +133,14 @@ tr {
 .section {
     text-align: center;
     display: inline-block;
+            
 }
 
+.sectionproduct {
+    text-align: center;
+    display: inline-block;
+    
+}
     .section > div.wrap {
         clear: both;
     }
@@ -146,6 +152,7 @@ tr {
         padding-top: 10px;
         padding-bottom: 10px;
         width: 350Px;
+
     }
 
         .section div img {
@@ -162,9 +169,9 @@ tr {
 
         .section div span {
             position: absolute;
-            left: 10%;
-            width: 80%;
-            margin: -15px auto 0 auto;
+            left: 27%;
+            width: 70%;
+            margin: 0px auto 0 auto;
             background: black;
             color: limegreen;
             text-align: center;
