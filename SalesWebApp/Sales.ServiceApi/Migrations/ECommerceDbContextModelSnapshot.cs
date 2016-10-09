@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Sales.ServiceApi.Data;
 
 namespace Sales.ServiceApi.Migrations
@@ -21,6 +22,8 @@ namespace Sales.ServiceApi.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("ImageUrl");
+
+                    b.Property<int>("LikesCount");
 
                     b.Property<string>("Link");
 

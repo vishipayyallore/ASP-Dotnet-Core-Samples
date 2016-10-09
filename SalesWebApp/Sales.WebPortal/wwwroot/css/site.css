@@ -177,3 +177,8 @@ tr {
             text-align: center;
             border: 1px solid orange;
         }
+.big-green-stars > i {
+      font-size: 4.0em;
+      color: green;
+      text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    }

@@ -8,8 +8,8 @@ using Sales.ServiceApi.Data;
 namespace Sales.ServiceApi.Migrations
 {
     [DbContext(typeof(ECommerceDbContext))]
-    [Migration("20161008104541_eCommerceMigration1")]
-    partial class eCommerceMigration1
+    [Migration("20161009143501_ECommerceMigration1")]
+    partial class ECommerceMigration1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,6 +23,8 @@ namespace Sales.ServiceApi.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("ImageUrl");
+
+                    b.Property<int>("LikesCount");
 
                     b.Property<string>("Link");
 

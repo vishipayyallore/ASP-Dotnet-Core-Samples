@@ -13,7 +13,7 @@
 
     <div>
         <div class="section">
-            <div ng-repeat="product in vm.products" class="sectionproduct">
+            <div ng-repeat="product in vm.products | filter: vm.searchOn" class="sectionproduct">
                 <div>
                     <table style="text-align: left">
                         <tr>
@@ -22,10 +22,10 @@
                         <tr>
                             <td>
                                 <img ng-src="{{product.imageUrl}}" alt="Product Image" width="300px" height="300px">
-                                <span>
+                                <span style="width: 50%">
                                     <table style="text-align: left" cellpadding="0" cellspacing="0">
                                         <tr>
-                                            <td>{{product.price}}</td>
+                                            <td>{{product.price | currency}} | <i class="fa fa-thumbs-o-up" style="color: white" aria-hidden="true">{{product.likesCount}}</i></td>
                                         </tr>
                                         <tr>
                                             <td>Purchase by: {{product.purchaseByCount}}</td>
@@ -34,12 +34,9 @@
                                 </span>
                             </td>
                         </tr>
-                        <!--<tr>
-                            <td>{{product.price}}</td>
-                        </tr>-->
-                        <!--<tr>
-                            <td>Purchase by: {{product.purchaseByCount}}</td>
-                        </tr>-->
+                        <tr>
+                            <td>Rating: <rating ng-model="product.rating" ></rating>
+                        </tr>
                         <tr>
                             <td>Tags: {{product.tags}}</td>
                         </tr>
@@ -49,7 +46,7 @@
                     </table>
                 </div>
             </div>
-
+            <hr/>
             <div>
                 <nav>
                     <ul class="pagination pagination-sm">

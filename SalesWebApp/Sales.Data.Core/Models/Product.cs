@@ -22,6 +22,8 @@ namespace Sales.Data.Core.Models
 
         public int PurchaseByCount { get; set; }
 
+        public int LikesCount { get; set; }
+
         public string Tags { get; set; }
         #endregion
     }

@@ -14,6 +14,7 @@
         vm.searchOn = "";
         vm.errorMessage = "";
         vm.products = [];
+        vm.rating = 3.5;
 
         var url = "http://salesserviceapi.azurewebsites.net/api/Products";
         //alert(url);
@@ -30,6 +31,15 @@
             .finally(function () {
                  vm.isBusy = false;
             });
+
+        //vm.getLikesCount = function () {
+        //    var total = 0;
+        //    for (var i = 0; i < $scope.cart.products.length; i++) {
+        //        var product = $scope.cart.products[i];
+        //        total += (product.price * product.quantity);
+        //    }
+        //    return total;
+        //}
 
         activate();
 

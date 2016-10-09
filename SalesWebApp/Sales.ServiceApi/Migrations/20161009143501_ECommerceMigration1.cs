@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Sales.ServiceApi.Migrations
 {
-    public partial class eCommerceMigration1 : Migration
+    public partial class ECommerceMigration1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,6 +14,7 @@ namespace Sales.ServiceApi.Migrations
                 {
                     Id = table.Column<Guid>(nullable: false),
                     ImageUrl = table.Column<string>(nullable: true),
+                    LikesCount = table.Column<int>(nullable: false),
                     Link = table.Column<string>(nullable: true),
                     Name = table.Column<string>(nullable: true),
                     Price = table.Column<decimal>(nullable: false),
