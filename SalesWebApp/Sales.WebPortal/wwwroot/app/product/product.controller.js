@@ -32,14 +32,14 @@
                  vm.isBusy = false;
             });
 
-        //vm.getLikesCount = function () {
-        //    var total = 0;
-        //    for (var i = 0; i < $scope.cart.products.length; i++) {
-        //        var product = $scope.cart.products[i];
-        //        total += (product.price * product.quantity);
-        //    }
-        //    return total;
-        //}
+        vm.getLikesCount = function () {
+            var total = 0;
+            for (var i = 0; i < vm.products.length; i++) {
+                var product = vm.products[i];
+                total += product.likesCount;
+            }
+            return total;
+        }
 
         activate();
 

@@ -1,0 +1,59 @@
+http://plnkr.co/edit/REixcir0gL0HGCTvclYN?p=preview
+http://jsfiddle.net/enigmarm/8ab5c/9/
+
+1becf483-2ab4-427d-916e-3aaf84a1ee36	http://saleswebportal.azurewebsites.net/images/Product1.png	ath-aaa-Product1/	ATH-M50X Product 1	4356.78	2345	4.50	Entertainment, Cell Phones
+a152f048-e912-4ef8-9137-6a4475f8c48d	http://saleswebportal.azurewebsites.net/images/Product2.png	ath-aaa-Product2/	ATH-M50X Product 2	8631.00	1626	3.50	Entertainment, Music, Headphone
+a152f048-e912-4ef8-9137-6a4475f8c48e	http://saleswebportal.azurewebsites.net/images/Product3.png	ath-aaa-Product3/	ATH-M50X Product 3	5736.45	1090	4.00	Entertainment, Music, CDs
+a152f048-e912-4ef8-9137-6a4475f8c48f	http://saleswebportal.azurewebsites.net/images/Product4.png	ath-aaa-Product4/	ATH-M50X Product 4	2345.78	2346	3.50	Education, Books
+b23056c6-b023-4bc9-83a4-7fec4dee23d5	http://saleswebportal.azurewebsites.net/images/Product5.png	ath-aaa-Product5/	ATH-M50X Product 5	4856.78	5005	3.50	Sports, Equipment
+b23056c6-b023-4bc9-83a4-7fec4dee23d6	http://saleswebportal.azurewebsites.net/images/Product6.png	ath-aaa-Product6/	ATH-M50X Product 6	9835.67	2002	5.00	Education, Computer
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+('1becf483-2ab4-427d-916e-3aaf84a1ee36', 'http://saleswebportal.azurewebsites.net/images/Product1.png', 1256, 'ath-m50x-Product1/', 'ATH-M50X Product 1', 4356.78, 2345, 4.50,	'Entertainment, Cell Phones')
+('a152f048-e912-4ef8-9137-6a4475f8c48d', 'http://saleswebportal.azurewebsites.net/images/Product2.png', 2534, 'ath-m50x-Product2/', 'ATH-M50X Product 2', 8631.00, 1626, 3.50,	'Entertainment, Music, Headphone')
+('a152f048-e912-4ef8-9137-6a4475f8c48e', 'http://saleswebportal.azurewebsites.net/images/Product3.png', 7623, 'ath-m50x-Product3/', 'ATH-M50X Product 2', 5736.45, 1090, 4.00,	'Entertainment, Music, CDs')
+('a152f048-e912-4ef8-9137-6a4475f8c48f', 'http://saleswebportal.azurewebsites.net/images/Product4.png', 3837, 'ath-m50x-Product4/', 'ATH-M50X Product 3', 2345.78, 2346, 1.50,	'Education, Books')
+('b23056c6-b023-4bc9-83a4-7fec4dee23d5', 'http://saleswebportal.azurewebsites.net/images/Product5.png', 6873, 'ath-m50x-Product5/', 'ATH-M50X Product 4', 4856.78, 5005, 2.50,	'Sports, Equipment')
+('b23056c6-b023-4bc9-83a4-7fec4dee23d6', 'http://saleswebportal.azurewebsites.net/images/Product6.png', 8756, 'ath-m50x-Product6/', 'ATH-M50X Product 5', 9835.67, 3345, 5.00,	'Education, Computer')
+
+INSERT INTO [dbo].[Products] ([Id] ,[ImageUrl] ,[LikesCount] ,[Link] ,[Name] ,[Price] ,[PurchaseByCount] ,[Rating] ,[Tags]) VALUES ('1becf483-2ab4-427d-916e-3aaf84a1ee36', 'http://saleswebportal.azurewebsites.net/images/Product1.png', 1256, 'ath-m50x-Product1/', 'ATH-M50X Product 1', 4356.78,	2345,	4.50,	'Entertainment, Cell Phones')
+INSERT INTO [dbo].[Products] ([Id] ,[ImageUrl] ,[LikesCount] ,[Link] ,[Name] ,[Price] ,[PurchaseByCount] ,[Rating] ,[Tags]) VALUES ('a152f048-e912-4ef8-9137-6a4475f8c48d', 'http://saleswebportal.azurewebsites.net/images/Product2.png', 2534, 'ath-m50x-Product2/', 'ATH-M50X Product 2', 8631.00, 1626, 3.50,	'Entertainment, Music, Headphone')
+INSERT INTO [dbo].[Products] ([Id] ,[ImageUrl] ,[LikesCount] ,[Link] ,[Name] ,[Price] ,[PurchaseByCount] ,[Rating] ,[Tags]) VALUES ('a152f048-e912-4ef8-9137-6a4475f8c48e', 'http://saleswebportal.azurewebsites.net/images/Product3.png', 7623, 'ath-m50x-Product3/', 'ATH-M50X Product 2', 5736.45, 1090, 4.00,	'Entertainment, Music, CDs')
+INSERT INTO [dbo].[Products] ([Id] ,[ImageUrl] ,[LikesCount] ,[Link] ,[Name] ,[Price] ,[PurchaseByCount] ,[Rating] ,[Tags]) VALUES ('a152f048-e912-4ef8-9137-6a4475f8c48f', 'http://saleswebportal.azurewebsites.net/images/Product4.png', 3837, 'ath-m50x-Product4/', 'ATH-M50X Product 3', 2345.78, 2346, 1.50,	'Education, Books')
+INSERT INTO [dbo].[Products] ([Id] ,[ImageUrl] ,[LikesCount] ,[Link] ,[Name] ,[Price] ,[PurchaseByCount] ,[Rating] ,[Tags]) VALUES ('b23056c6-b023-4bc9-83a4-7fec4dee23d5', 'http://saleswebportal.azurewebsites.net/images/Product5.png', 6873, 'ath-m50x-Product5/', 'ATH-M50X Product 4', 4856.78, 5005, 2.50,	'Sports, Equipment')
+INSERT INTO [dbo].[Products] ([Id] ,[ImageUrl] ,[LikesCount] ,[Link] ,[Name] ,[Price] ,[PurchaseByCount] ,[Rating] ,[Tags]) VALUES ('b23056c6-b023-4bc9-83a4-7fec4dee23d6', 'http://saleswebportal.azurewebsites.net/images/Product6.png', 8756, 'ath-m50x-Product6/', 'ATH-M50X Product 5', 9835.67, 3345, 5.00,	'Education, Computer')
+
+[Minimum Requirement]
+— Use of Web API to fetch product detail. products[]
+— [ name, image, price, rating, tags[], link, purchased_by ].
+— Visually interactive responsive design listing all the products.
+— Archive and submit source code, screenshots, deployment instructions.
+[Plus Point]
+— A feature to Search (via tags).
+— Add autocomplete feature to Search product tags conveniently.
+— Display total products and integrate product details (rating, price, image, tags, etc)
+— Link url_address to respective URL. (Should open in new window | target="_blank")
+— Feel free to use your favourite UI/UX frameworks and tools in design and development.
+[Extra Work]
+— Awesome if you could manage to deploy/host this webapp at any of your favourite cloud portal and share Demo URL. (i.e. AWS, Heroku, OpenShift, etc)
+— Implement Sort (by Rating, Price or Like ) feature.
+— Custom elegant design, fonts and icons to make web app more user-friendly.
+— You may add portfolio activity comprising awesome work you have done on web application(s).
+— Use your imagination and add features which would make things easier for end users. Submit link to github or existing hosted apps will help. Please don’t forget to add deployment instructions or READ.ME
+[Guide]
+— Products API:
+— Ideal Frontend Stack:
+•	Responsive Design: HTML5, CSS3 (LESS/SASS, Bootstrap/Foundation)
+•	Any of your favourite JS Libraries / Framework: jQuery, Angular, Backbone or React.
+•	Optional: Typography, Subtle pattern, Custom Icons.
+•	Use Modular / Component Design approach
+— PS: Application can be built with use of client-side scripting and need not require any backend.
+— IMPORTANT: Archive source, screenshots and documentation in ZIP file and upload it.
+— For icons, color and subtle texture:
+http://www.flatuicolorpicker.com/orange
+http://glyphsearch.com/
+http://subtlepatterns.com/thumbnail-view/
+http://codebeautify.org/jsonviewer
+http://www.flaticon.com/categories
+[Wireframe MVP / Reference Structure]
+Mockup image with instructions
+App Page I — Home page comprising list of repository and relevant details.
