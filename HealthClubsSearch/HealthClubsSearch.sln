@@ -7,8 +7,6 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HealthClubs.Data.Core", "He
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InternalDocumentation", "InternalDocumentation", "{56D2A40D-3ED2-41C9-A9EB-5A896EAF77FF}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HealthClubs.Data.Store", "HealthClubs.Data.Store\HealthClubs.Data.Store.xproj", "{A6A9C9D8-A783-4B64-B27D-3A1E50C738C0}"
-EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HealthClubs.Services.Api", "HealthClubs.Services.Api\HealthClubs.Services.Api.xproj", "{4608E87F-1281-4479-BC57-F9157FA9B83B}"
 EndProject
 Global
@@ -21,10 +19,6 @@ Global
 		{97A032A3-7D2B-460A-90F5-3E74991A95F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97A032A3-7D2B-460A-90F5-3E74991A95F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97A032A3-7D2B-460A-90F5-3E74991A95F8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A6A9C9D8-A783-4B64-B27D-3A1E50C738C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A6A9C9D8-A783-4B64-B27D-3A1E50C738C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A6A9C9D8-A783-4B64-B27D-3A1E50C738C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A6A9C9D8-A783-4B64-B27D-3A1E50C738C0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4608E87F-1281-4479-BC57-F9157FA9B83B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4608E87F-1281-4479-BC57-F9157FA9B83B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4608E87F-1281-4479-BC57-F9157FA9B83B}.Release|Any CPU.ActiveCfg = Release|Any CPU
