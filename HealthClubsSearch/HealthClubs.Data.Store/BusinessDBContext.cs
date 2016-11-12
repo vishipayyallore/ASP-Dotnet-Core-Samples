@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace HealthClubs.Data.Store
 {
-    public class BusinessDBContext : DBContext
+    public class BusinessDbContext : DbContext
     {
-        public BusinessDBContext()
+        public BusinessDbContext()
         {
         }
     }
