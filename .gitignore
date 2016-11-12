@@ -253,3 +253,4 @@ paket-files/
 /SalesWebApp/Sales.ServiceApi/Properties/PublishProfiles
 /SalesWebApp/Sales.WebPortal/Properties/PublishProfiles
 /HealthClubsSearch/HealthClubs.Services.Api/Properties/PublishProfiles
+/HealthClubsSearch/HealthClubs.Web.Portal/Properties/PublishProfiles
