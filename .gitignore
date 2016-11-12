@@ -252,3 +252,4 @@ paket-files/
 *.sln.iml
 /SalesWebApp/Sales.ServiceApi/Properties/PublishProfiles
 /SalesWebApp/Sales.WebPortal/Properties/PublishProfiles
+/HealthClubsSearch/HealthClubs.Services.Api/Properties/PublishProfiles

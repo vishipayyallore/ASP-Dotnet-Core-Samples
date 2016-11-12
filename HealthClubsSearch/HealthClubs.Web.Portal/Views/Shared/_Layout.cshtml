@@ -1,23 +1,42 @@
-﻿<!DOCTYPE html>
+﻿@{
+//var applicationName = applicationDetails.Value.Name;
+//var applicationVersion = applicationDetails.Value.VersionNumber;
+//var developedBy = applicationDetails.Value.DevelopedBy;
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - HealthClubs.Web.Portal</title>
-
+    <title>@ViewData["Title"] - Health Clubs Portal</title>
+    <base href="/">
     <environment names="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/lib/bootswatch/darkly/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="~/css/site.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </environment>
     <environment names="Staging,Production">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </environment>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+<div id="sidebar">
+    <div>&nbsp;</div>
+    <div class="center-block">
+        <img src="~/images/Spa-512.png" alt="headshot" class="headshot"/>
+    </div>
+    <ul class="nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">What we do</a></li>
+    </ul>
+</div>
+    <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,22 +45,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">HealthClubs.Web.Portal</a>
+                @Html.ActionLink("Health Clubs", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li>@Html.ActionLink("Businesses", "Index", "Product")</li>
+                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
                 </ul>
+
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container body-content" id="wrapper">
         @RenderBody()
+   
         <hr />
         <footer>
-            <p>&copy; 2016 - HealthClubs.Web.Portal</p>
+            <p>&copy; 2016 - Health Clubs Web Portal (Version 1.0.0.1)</p>
         </footer>
     </div>
 
@@ -54,14 +74,31 @@
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery">
+
         </script>
         <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
                 asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
+    <script src="~/lib/angular/angular.js"></script>
+    <script src="~/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="~/lib/angular-star-rating/angular-star-rating.js"></script>
+
+    <!--Application Specific JS files-->
+    <script src="~/app/sharedjs/WaitControl.js"></script>
+    <script src="~/app/app.module.js"></script>
+    <script src="~/app/app.config.js"></script>
+    <script src="~/app/home/home.module.js"></script>
+    <script src="~/app/home/home.controller.js"></script>
+    <script src="~/app/product/product.module.js"></script>
+    <script src="~/app/product/product.controller.js"></script>
+    <script src="~/app/product/product.config.js"></script>
+
     @RenderSection("scripts", required: false)
+
 </body>
 </html>
