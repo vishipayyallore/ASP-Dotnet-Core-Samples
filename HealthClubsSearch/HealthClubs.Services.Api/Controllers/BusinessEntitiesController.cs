@@ -11,14 +11,14 @@ namespace HealthClubs.Services.Api.Controllers
     public class BusinessEntitiesController : Controller
     {
 
-        private IBusinessRepository _businessRepository;
+        private readonly IBusinessRepository _businessRepository;
 
         public BusinessEntitiesController(IBusinessRepository businessRepository)
         {
             _businessRepository = businessRepository;
         }
 
-        // GET api/values
+        // GET api/BusinessEntities
         [HttpGet]
         public JsonResult Get()
         {
