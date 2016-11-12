@@ -15,3 +15,4 @@ Step 3:
 Publish the code to Azure Cloud.
 
 
+'angular-star-rating'
