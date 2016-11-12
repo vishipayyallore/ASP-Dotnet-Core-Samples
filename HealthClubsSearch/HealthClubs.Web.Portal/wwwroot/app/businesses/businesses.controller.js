@@ -17,7 +17,6 @@
         vm.rating = 3.5;
 
         var url = "http://healthclubsservicesapi.azurewebsites.net/api/BusinessEntities";
-        //"http://salesserviceapi.azurewebsites.net/api/Products";
 
         $http.get(url)
             .then(function (response) {
