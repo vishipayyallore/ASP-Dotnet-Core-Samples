@@ -24,6 +24,14 @@
                     controller: "ProductController",
                     controllerAs: "vm"
                 }
+            )
+            .state(
+                "businesses", {
+                    url: "/Businesses",
+                    templateUrl: "app/businesses/index.html",
+                    controller: "BusinessesController",
+                    controllerAs: "vm"
+                }
             );
     }
 
