@@ -2,9 +2,9 @@
 
 namespace HealthClubs.Data.Core.Models
 {
-    public class Shop
+    public class Business
     {
-        public Shop() { }
+        public Business() { }
 
         #region Properties
         public Guid Id { get; set; }
