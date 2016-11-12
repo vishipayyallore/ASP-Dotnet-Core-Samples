@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using HealthClubs.Services.Api.DAL.Contracts;
+using HealthClubs.Data.Core.Models;
 
 namespace HealthClubs.Services.Api.DAL
 {
