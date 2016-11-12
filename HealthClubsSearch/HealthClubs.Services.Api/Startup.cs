@@ -1,4 +1,5 @@
 ﻿using HealthClubs.Services.Api.DAL;
+using HealthClubs.Services.Api.DAL.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -38,6 +39,8 @@ namespace HealthClubs.Services.Api
             services.AddDbContext<BusinessDbContext>(options => options.UseSqlServer(Configuration["Data:ECommerceDataStore:ConnectionString"]));
 
             services.AddCors();
+
+            services.AddScoped<IBusinessRepository, BusinessRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +50,8 @@ namespace HealthClubs.Services.Api
             loggerFactory.AddDebug();
 
             app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
+            
 
             app.UseMvc();
         }
